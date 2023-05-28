@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 26, 2023 at 02:00 PM
+-- Generation Time: May 28, 2023 at 07:07 AM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.1.1
 
@@ -43,8 +43,7 @@ INSERT INTO `tb_buah` (`kode`, `nama_buah`, `harga`, `foto`) VALUES
 ('FR002', 'Grapes', 21000, 'uploads/product-img-2.jpg'),
 ('FR003', 'Orange', 17000, 'uploads/product-img-3.jpg'),
 ('FR004', 'Kiwi', 18000, 'uploads/product-img-4.jpg'),
-('FR005', 'Green Apple', 21000, 'uploads/product-img-5.jpg'),
-('FR006', 'Raspberry', 28000, 'uploads/product-img-6.jpg');
+('FR005', 'Green Apple', 21000, 'uploads/product-img-5.jpg');
 
 -- --------------------------------------------------------
 
@@ -84,7 +83,9 @@ CREATE TABLE `tb_customer` (
 
 INSERT INTO `tb_customer` (`kode_pembelian`, `nama_pembeli`, `alamat`, `hp`, `total`, `bukti_bayar`, `status`) VALUES
 ('TB001', 'asd', '12', '123', 237000, 'buktibayar/6__IMG_4534_Selain_sebagai_penghias_tam', 'Delivered'),
-('TB002', 'Raihan', 'qwq', '09', 12264, 'buktibayar/s_5156_waifu2x_art_noise2_scale.png', 'Delivered');
+('TB002', 'Raihan', 'qwq', '09', 12264, 'buktibayar/s_5156_waifu2x_art_noise2_scale.png', 'Delivered'),
+('TB003', 'Raihan', 'Anwar Arsyad Street, 1546.', '085156061125', 75000, 'buktibayar/3ee96894b5e5312c538b1dec3e0b5434.jpg', 'Delivered'),
+('TB004', 'Raihan', 'Anwar Arsyad Street', '085156061125', 75000, 'buktibayar/3ee96894b5e5312c538b1dec3e0b5434.jpg', 'Delivered');
 
 -- --------------------------------------------------------
 
@@ -100,6 +101,14 @@ CREATE TABLE `tb_question` (
   `subject` text NOT NULL,
   `message` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `tb_question`
+--
+
+INSERT INTO `tb_question` (`id`, `nama`, `email`, `phone`, `subject`, `message`) VALUES
+(6, 'Muhammad Raihan', 'mraihan.33.91.5112@gmail.com', '085156061125', 'Question About Your Product', 'Do you have blueberry, because i need blueberry for my food?'),
+(7, 'Muhammad Raihan', 'mraihan.33.91.5112@gmail.com', '085156061125', 'Product Question', 'Do you have blueberry?');
 
 -- --------------------------------------------------------
 
@@ -163,13 +172,13 @@ ALTER TABLE `tb_user`
 -- AUTO_INCREMENT for table `tb_cart`
 --
 ALTER TABLE `tb_cart`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `tb_question`
 --
 ALTER TABLE `tb_question`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `tb_user`
