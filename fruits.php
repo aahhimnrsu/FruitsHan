@@ -37,7 +37,7 @@ $customer = $datacust->fetch_assoc(); ?>
                                 <td class="align-middle text-center"><?= $d['harga'] ?></td>
                                 <td class="align-middle text-center"><img src="backend/<?= $d['foto'] ?>" style="width: 50px;"></td>
                                 <td class="align-middle text-center">
-                                <a href="backend/editfruits.php?kode=<?php echo $d['kode']; ?>" class="btn btn-warning btn-sm text-white"><i class="fas fa-edit"></i> Edit</a>
+                                <a href="editfruits.php?kode=<?php echo $d['kode']; ?>" class="btn btn-warning btn-sm text-white"><i class="fas fa-edit"></i> Edit</a>
                                 <a href="backend/hapusbarang.php?kode=<?php echo $d['kode']; ?>" class="btn btn-danger btn-sm"><i class="fas fa-trash"></i> Delete</a>
                                 </td>
                             </tr>

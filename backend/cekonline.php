@@ -68,8 +68,8 @@ if ($uploadOk == 0) {
 <body>
     <div bgcolor="#f6f6f6" class="p-3" style="color: #333; height: 100%; width: 100%;" height="auto" width="auto">
         <div class="d-flex justify-content-between">
-            <a href="../index.php" class="btn btn-outline-primary"> Home </a>
-            <button class="btn btn-outline-success" onclick="print()"> Print </button>
+            <a href="../index.php" class="btn btn-primary btn-sm"><i class="fas fa-angle-left"></i> Back </a>
+            <button class="btn btn-success btn-sm" onclick="print()"> Print </button>
         </div>
         <table class="p-5" cellspacing="0" style="border-collapse: collapse; padding: 100px; width: auto;" width="auto" align="center">
             <tbody class="p-5">
@@ -80,10 +80,10 @@ if ($uploadOk == 0) {
                             <tbody>
                                 <tr>
                                     <td style="padding: 0;">
-                                        <h1>Toko Buah Online</h1>
+                                        <h1>FruitsHan</h1>
                                     </td>
                                     <td style="color: #999; font-size: 12px; padding: 0; text-align: right;" align="right">
-                                        Toko Buah Online<br />
+                                        FruitHan<br />
                                         Invoice #<?= $kode ?> <br>
                                     </td>
                                 </tr>
@@ -100,7 +100,7 @@ if ($uploadOk == 0) {
                             <tbody>
                                 <tr>
                                     <td width="50%" style="padding: 20px;"><strong style="color: #333; font-size: 24px;"><?="Rp.". $total ;?></strong> Total</td>
-                                    <td align="right" width="50%" style="padding: 20px;">Terima Kasih Telah Berbelanja</td>
+                                    <td align="right" width="50%" style="padding: 20px;">Thank you for shopping</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -131,12 +131,16 @@ if ($uploadOk == 0) {
                                         <table cellspacing="0" style="border-collapse: collapse; margin-bottom: 40px;">
                                             <tbody>
                                                 <tr>
-                                                    <td style="padding: 5px 0;">Nama</td>
+                                                    <td style="padding: 5px 0;">Name</td>
                                                     <td align="right" style="padding: 5px 0;"><?= $nama ;?></td>
                                                 </tr>
                                                 <tr>
-                                                    <td style="padding: 5px 0;">Alamat</td>
+                                                    <td style="padding: 5px 0;">Address</td>
                                                     <td align="right" style="padding: 5px 0;"><?= $alamat ;?></td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="padding: 5px 0;">Phone</td>
+                                                    <td align="right" style="padding: 5px 0;"><?= $hp ;?></td>
                                                 </tr>
                                                 <tr>
                                                     <td style="border-bottom: 2px solid #000; border-top: 2px solid #000; font-weight: bold; padding: 5px 0;">Total</td>
@@ -159,19 +163,17 @@ if ($uploadOk == 0) {
                             <tbody>
                                 <tr>
                                     <td width="40%" valign="top" style="padding: 10px 0;">
-                                        <h4 style="margin: 0;">Pertanyaan?</h4>
+                                        <h4 style="margin: 0;">Have you any question?</h4>
                                         <p style="color: #666; font-size: 12px; font-weight: normal; margin-bottom: 10px;">
-                                            Kunjungi Instagram kami
-                                            <a href="#" style="color: #666;" target="_blank">
-                                                @tokobuahonline
+                                            <a href="../contact.php" style="color: #666;" target="_blank">
+                                                Contact us
                                             </a>
-                                            berikan pertanyaan anda.
                                         </p>
                                     </td>
                                     <td width="10%" style="padding: 10px 0;">&nbsp;</td>
                                     <td width="40%" valign="top" style="padding: 10px 0;">
-                                        <h4 style="margin: 0;">Toko Buah Online</h4>
-                                        <p style="color: #666; font-size: 12px; font-weight: normal; margin-bottom: 10px;">Jl. Srijaya Negara Bukit Besar, Bukit Lama, Ilir Bar. I, Kota Palembang, Sumatera Selatan 30139</p>
+                                        <h4 style="margin: 0;">FruitHan</h4>
+                                        <p style="color: #666; font-size: 12px; font-weight: normal; margin-bottom: 10px;">Anwar Arsyad Street, Palembang. 30138</p>
                                         </p>
                                     </td>
                                 </tr>
